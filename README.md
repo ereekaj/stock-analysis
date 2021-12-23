@@ -6,6 +6,18 @@ The purpose of this project is to improve the workbook created for our client, S
 ## Results: 
 Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.
 
+### Stock performance 2017 vs 2018
+
+
+### Original vs Refactored code
+Execution times
+
+
+lines of code original vs refactored
+differences - used array variables and less for loops
+
+
+
 ## Summary: 
 In a summary statement, address the following questions.
 - What are the advantages or disadvantages of refactoring code?
