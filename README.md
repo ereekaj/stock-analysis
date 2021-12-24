@@ -8,13 +8,15 @@ The purpose of this project is to improve the workbook created for my client, St
 Using both sets of code, analysis showed that stocks in 2017 had more positive returns than 2018. In 2017, 11 of the 12 stocks had positive returns.  In 2018, only 2 of the 12 stocks had positive returns.  Some additional analysis on a larger dataset would be needed to determine if this was a theme across most stocks in those years or not. 
 
 ### Original vs Refactored code
-Below is a screenshot of the popup recording the execution time of refactored code on 2017 data. 
+Below is a screenshot of the popup recording the execution time of refactored code on 2017 data.                                                                    
 ![2017-screenshot](https://github.com/ereekaj/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)
 
-Below is a screenshot of the popup recording the execution time of refactored code on 2018 data. 
+Below is a screenshot of the popup recording the execution time of refactored code on 2018 data.                                              
+
 ![2018-screenshot](https://github.com/ereekaj/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
 
 The execution time of the refactored code was much faster than the original code. Below is a graph showing the stark difference of the execution times of each of the different codes in 2017 and 2018. The refactored code decreased the execution time for each year by over a half of a second or by 79% on the 2017 data and by 82% on the 2018 data.  This could be very useful when analyzing larger datasets. 
+
 ![graph-time-comparison.png](https://github.com/ereekaj/stock-analysis/blob/main/Resources/Graph-time-comparison.png)
 
 The efficiency of the refactored code can be attributed to the use of arrays which can store more than one value instead of using individual variables to store each value.  You only have to define the array once and then use an index to tell the information apart.  For example, the following code was used to establish arrays in the refactored code using (12) as the index to identify the size of the array:
