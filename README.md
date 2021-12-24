@@ -1,32 +1,30 @@
 # Stock-analysis Challenge
 
 ## Overview of Project: 
-The purpose of this project is to improve the workbook created for our client, Steve. The original workbook used VBA macros to help Steve analyze 12 stocks. Now he would like to analyze much more data on the entire stock market. With a lot of data, the workbook may run too slowly, so I plan to refactor or edit the code to see if there is a way to do the same analysis but use code that will be more efficient in analyzing data in general.  
+The purpose of this project is to improve the workbook created for my client, Steve. The original workbook used VBA macros to help Steve analyze 12 stocks. Now he would like to analyze much more data on the entire stock market. With a lot of data, the workbook may run too slowly, so I plan to refactor or edit the code to see if there is a way to do the same analysis but use code that will be more efficient in analyzing data in general.  
 
 ## Results: 
-Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.
 
 ### Stock performance 2017 vs 2018
 Using both sets of code, analysis showed that stocks in 2017 had more positive returns than 2018. In 2017, 11 of the 12 stocks had positive returns.  In 2018, only 2 stocks had positive returns.  Some additional analysis on a larger dataset would be needed to determine if this was a theme across most stocks in those years or not.  
 ### Original vs Refactored code
-Execution time
-
 Below is a screenshot of the popup recording the execution time of refactored code on 2017 data. 
 ![2017-screenshot](https://github.com/ereekaj/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)
 
 Below is a screenshot of the popup recording the execution time of refactored code on 2018 data. 
 ![2018-screenshot](https://github.com/ereekaj/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
 
-The 
-
-Below is a graph comparing the execution times of each of the different codes in 2017 and 2018.  
+The execution time of the refactored code was much faster than the original code. The refactored code decreased the execution time for each year by over a half of a second.  Below is a graph showing the stark difference of the execution times of each of the different codes in 2017 and 2018.  The refactored code decresed the execution time by 79% on the 2017 data and by 82% on the 2018 data.  This could be very useful when analyzing larger datasets. 
 ![graph-time-comparison.png](https://github.com/ereekaj/stock-analysis/blob/main/Resources/Graph-time-comparison.png)
 
-
-lines of code original vs refactored
-differences - used array variables and less for loops
-
-
+The efficiency of the refactored code can be attributed to the use of arrays which can store more than one value instead of using individual variables to store each value.  You only have to define the array once and then use an index to tell the information apart.  For example, the following code was used to establish arrays in the refactored code using (12) as the index to identify the size of the array:
+```
+   '1b) Create three output arrays
+   Dim tickerVolumes(12) As Long
+   Dim tickerStartingPrices(12) As Single
+   Dim tickerEndingPrices(12) As Single
+```
+Although this added additional lines of code, it still made the workbook more efficient. That's because all of the stock information is stored in one place, the array and is then easier to retrieve when doing the analysis. 
 
 ## Summary: 
 In a summary statement, address the following questions.
