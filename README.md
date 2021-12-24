@@ -1,4 +1,4 @@
-# Stock-analysis Challenge
+# Stock Analysis Challenge
 
 ## Overview of Project: 
 The purpose of this project is to improve the workbook created for my client, Steve. The original workbook used VBA macros to help Steve analyze 12 stocks. Now he would like to analyze much more data on the entire stock market. With a lot of data, the workbook may run too slowly, so I plan to refactor or edit the code to see if there is a way to do the same analysis but use code that will be more efficient in analyzing data in general.  
